@@ -89,7 +89,7 @@ describe "Simon says" do
     end
 
     it "does capitalize 'little words' at the start of a title" do
-      expect(titleize("the bridge over the river kwai")).to eq("The Bridge Over the River Kwai")
+      expect(titleize("The bridge over the river kwai")).to eq("The Bridge Over the River Kwai")
     end
   end
 

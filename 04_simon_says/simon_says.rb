@@ -29,7 +29,9 @@ def first_word(x)
   x.split.first
 end
 
-def titleize(x)
-x.split.map(&:capitalize).join("the")
-{x.split.each{|x| x.capitalize!}.join('the')}
-end
+def titleize (x)
+  
+  words_to_ignore = "and" "the"
+  x.split.each{|i| i.capitalize! if ! words_to_ignore.include? i  }.join(' ')
+
+  end
